@@ -2,6 +2,8 @@ import React from 'react';
 import { Users, Award, Target, Zap } from 'lucide-react';
 
 const About: React.FC = () => {
+  const BASE = '/drone_website'; // Public path base for GitHub Pages
+
   const features = [
     {
       icon: Users,
@@ -41,7 +43,7 @@ const About: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-center gap-8">
             <div className="text-center">
               <img 
-                src="/colby-headshot.jpg"
+                src={`${BASE}/colby-headshot.jpg`}
                 alt="Colby J Weeks"
                 className="w-48 h-48 rounded-full mx-auto mb-4 object-cover shadow-lg"
               />
@@ -50,7 +52,7 @@ const About: React.FC = () => {
             </div>
             <div className="text-center">
               <img 
-                src="/caden-headshot.jpg"
+                src={`${BASE}/caden-headshot.jpg`}
                 alt="Caden J Weeks"
                 className="w-48 h-48 rounded-full mx-auto mb-4 object-cover shadow-lg"
               />
@@ -59,7 +61,6 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-deep-olive">
               Precision. Innovation. Excellence.

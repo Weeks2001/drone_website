@@ -14,6 +14,8 @@ const Portfolio: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
 
+  const BASE = '/drone_website';
+
   const categories = [
     { id: 'all', name: 'All Projects' },
     { id: 'real-estate', name: 'Real Estate' },
@@ -29,7 +31,7 @@ const Portfolio: React.FC = () => {
       title: 'Real Estate Aerial View',
       category: 'real-estate',
       type: 'photography',
-      image: '/portfolio/realestate/realestate1.jpeg',
+      image: `${BASE}/portfolio/realestate/realestate1.jpeg`,
       description: 'Stunning aerial imagery showcasing residential property from above'
     },
     {
@@ -37,7 +39,7 @@ const Portfolio: React.FC = () => {
       title: 'Commercial Property 1',
       category: 'commercial',
       type: 'photography',
-      image: '/portfolio/commercial/commercial1.jpeg',
+      image: `${BASE}/portfolio/commercial/commercial1.jpeg`,
       description: 'Professional imagery of a commercial property project'
     },
     {
@@ -45,7 +47,7 @@ const Portfolio: React.FC = () => {
       title: 'Commercial Property 2',
       category: 'commercial',
       type: 'photography',
-      image: '/portfolio/commercial/commercial2.jpeg',
+      image: `${BASE}/portfolio/commercial/commercial2.jpeg`,
       description: 'Another view highlighting a different angle of the commercial site'
     },
     {
@@ -53,7 +55,7 @@ const Portfolio: React.FC = () => {
       title: 'Land Survey 1',
       category: 'land',
       type: 'photography',
-      image: '/portfolio/land/land1.jpeg',
+      image: `${BASE}/portfolio/land/land1.jpeg`,
       description: 'Aerial image used for surveying large land tracts'
     },
     {
@@ -61,7 +63,7 @@ const Portfolio: React.FC = () => {
       title: 'Land Survey 2',
       category: 'land',
       type: 'photography',
-      image: '/portfolio/land/land2.jpeg',
+      image: `${BASE}/portfolio/land/land2.jpeg`,
       description: 'Detailed aerial view for land assessment and development'
     }
   ];
